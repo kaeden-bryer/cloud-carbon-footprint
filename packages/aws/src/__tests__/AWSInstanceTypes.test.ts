@@ -3,6 +3,7 @@
  */
 
 import { EC2_INSTANCE_TYPES } from '../lib/AWSInstanceTypes'
+import { UNKNOWN_USAGE_TYPES } from '../lib/CostAndUsageTypes'
 
 describe('', () => {
   function expectInstanceType(vCPUs: number, memory: number, scope3: number) {
@@ -35,5 +36,9 @@ describe('', () => {
         pre_Scope3 = cur_Scope3
       }
     }
+  })
+
+  it('includes Q-Business-Pro-Index-Hours in unknown usage types', () => {
+    expect(UNKNOWN_USAGE_TYPES).toContain('Q-Business-Pro-Index-Hours')
   })
 })
