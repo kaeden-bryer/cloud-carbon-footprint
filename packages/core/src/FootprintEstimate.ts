@@ -17,6 +17,11 @@ export default interface FootprintEstimate {
   kilowattHours: number
   co2e: number
   usesAverageCPUConstant?: boolean
+  /**
+   * Optional tag identifying the cloud provider this estimate came from
+   * (e.g. 'AWS', 'GCP', 'AZURE'). Naming/semantics pending maintainer review.
+   */
+  cloudProvider?: string
 }
 
 export type KilowattHourTotals = {
