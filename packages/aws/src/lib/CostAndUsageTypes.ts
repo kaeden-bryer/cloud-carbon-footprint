@@ -250,6 +250,7 @@ export const UNKNOWN_USAGE_TYPES: string[] = [
   'Small-SimpleAD-Usage', // AWS Directory Service Simple AD
   'AmazonEKS-Hours:extendedSupport', // EKS extended K8s version support (managed control plane)
   'Q-Business-Starter-Index-free', // Amazon Q Business free-tier knowledge index
+  'Q-Business-Pro-Index-Hours', // Amazon Q Business Pro knowledge index (managed service, no direct hardware mapping)
   'KafkaServerless-ClusterHours', // MSK Serverless cluster base hourly fee
   'VpcEndpoint-Resource-Hours', // VPC endpoint resource provisioning fee
   'VpcLattice-Service-Network-Resource-Hours', // VPC Lattice service network resource fee
